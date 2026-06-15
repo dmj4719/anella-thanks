@@ -12,15 +12,17 @@
 body {
   font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Meiryo", sans-serif;
   color: #3f3f3f;
-  background: #fff;
+  background: #f0f0f0;
   -webkit-font-smoothing: antialiased;
   padding-bottom: 80px;
 }
 
 .p-contents {
-  max-width: 620px;
+  max-width: 480px;
   margin: 0 auto;
   overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 24px rgba(0,0,0,0.08);
 }
 
 img {
@@ -797,19 +799,21 @@ img {
 .sticky-cta {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 9999;
   padding: 0;
   box-shadow: 0 -4px 24px rgba(0,0,0,0.15);
   text-align: center;
-  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+  width: 100%;
+  max-width: 480px;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
 .sticky-cta.is-hidden {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(100%);
+  transform: translateX(-50%) translateY(100%);
 }
 
 .sticky-cta__link {
