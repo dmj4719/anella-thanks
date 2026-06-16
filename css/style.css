@@ -378,7 +378,6 @@ img {
   box-shadow: 0 8px 32px rgba(0,0,0,0.15);
   background: #f0f4f8;
   aspect-ratio: 16 / 9;
-  display: none;
 }
 
 .seminar-section__image img {
@@ -386,12 +385,6 @@ img {
   height: 100%;
   object-fit: cover;
   object-position: center;
-}
-
-@media (max-width: 480px) {
-  .seminar-section__image {
-    display: block;
-  }
 }
 
 .seminar-section__image.is-fallback {
